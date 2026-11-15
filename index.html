@@ -34,7 +34,7 @@ h2{font-size:clamp(30px,4.6vw,56px);font-weight:500;line-height:1.12;letter-spac
 .path-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:48px;align-items:start}
 .path-grid img{width:100%;max-width:280px;justify-self:center;height:auto}
 @media(min-width:761px){.inside-grid.flip{grid-template-columns:.8fr 1.2fr!important}}
-.inside-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start;margin-top:40px}.inside-grid .row{grid-template-columns:130px 1fr;gap:12px 24px}.inside-grid img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+.inside-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start;margin-top:40px}.inside-grid .row{grid-template-columns:130px 1fr;gap:12px 24px}.inside-grid img,.sketch img{width:100%;height:auto;display:block;border:1px solid var(--line)}
 .light-grid{display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:48px;align-items:start}
 video{width:100%;height:auto;aspect-ratio:9/16;background:#1c1d1e;display:block;border:1px solid var(--line)}
 figcaption{color:var(--mute);font-size:14px;margin-top:10px}
@@ -77,10 +77,8 @@ footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mute);font-si
 <section><svg class="bg" viewBox="0 0 1080 1080" style="right:-8%;top:50%" aria-hidden="true"><use href="#hp"/></svg><div class="wrap">
 <p class="eyebrow">Inside a grotto</p>
 <h2>Two twin quilts form each grotto</h2>
-<div class="inside-grid flip"><figure><img src="media/hanging-sketch.jpg" alt="Sketch of a quilted grotto hanging from wires, with a dark crosshatched interior"><figcaption>Sketch: the grotto hangs from above on wires.</figcaption></figure><div class="rows" style="margin-top:0">
-<div class="row"><p class="k">Figures</p><p class="v">Simple images in a cave art-nouveau style</p></div>
-<div class="row"><p class="k">Poetry</p><p class="v">Collective voice; &ldquo;We&rdquo; poetry in fragments; keywords carry the feeling</p></div>
-<div class="row"><p class="k">Stencils</p><p class="v">Hand stencils painted from people in my community</p></div></div>
+<p class="lead">Visitors can poke their head into an opening in the quilted grotto to see its interior.</p>
+<figure class="sketch" style="max-width:520px;margin-top:40px"><img src="media/hanging-sketch.jpg" alt="Sketch of a quilted grotto hanging from wires, with a dark crosshatched interior"><figcaption>Sketch: the grotto hangs from above on wires.</figcaption></figure>
 </div>
 </div></section>
 
