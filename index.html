@@ -38,6 +38,7 @@ h2{font-size:clamp(30px,4.6vw,56px);font-weight:500;line-height:1.12;letter-spac
 .light-grid{display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:48px;align-items:start}
 video{width:100%;height:auto;aspect-ratio:9/16;background:#1c1d1e;display:block;border:1px solid var(--line)}
 a{color:var(--ochre)}
+.stmt-grid{display:grid;grid-template-columns:1fr minmax(220px,300px);gap:56px;align-items:center}.stmt-grid video{width:100%;height:auto;display:block;border:1px solid var(--line)}
 .statement{padding:clamp(72px,12vw,160px) 0}.statement .big{font-size:clamp(30px,5vw,64px);line-height:1.2;max-width:18em;font-weight:400}
 figcaption{color:var(--mute);font-size:14px;margin-top:10px}
 footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mute);font-size:14px;letter-spacing:.18em}
@@ -52,6 +53,7 @@ footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mute);font-si
  .grid div{padding:24px 0}
  .path-grid,.light-grid,.inside-grid{gap:64px}
  .light-grid .rows{margin-top:0}
+ .stmt-grid{grid-template-columns:1fr;gap:40px}.stmt-grid figure{max-width:260px}
  .sub{margin-top:56px}
  .by{margin-top:72px}
  .row,.inside-grid .row{grid-template-columns:1fr}.grid{grid-template-columns:1fr}
@@ -70,9 +72,11 @@ footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mute);font-si
 <p class="sub">What if our future resembles<br>our <em>past</em> more than our present?</p>
 <p class="by">A QUILT INSTALLATION PROPOSAL<br>BY ZAK FOSTER</p></div></section>
 
-<section class="statement"><div class="wrap">
+<section class="statement"><div class="wrap"><div class="stmt-grid">
 <h2 class="big">Four interactive quilt&#8209;grottos, each made from two twin quilts hung from above</h2>
-</div></section>
+<figure><video controls playsinline preload="metadata" poster="media/prototype-poster.jpg"><source src="media/prototype.mp4" type="video/mp4">Your browser can&rsquo;t play this video.</video>
+<figcaption>Prototype: two randomly selected quilts, standing in for the final work.</figcaption></figure>
+</div></div></section>
 
 <section><svg class="bg" viewBox="0 0 1080 1080" style="left:-6%;top:50%" aria-hidden="true"><use href="#hp"/></svg><div class="wrap">
 <p class="eyebrow">Concept</p>
