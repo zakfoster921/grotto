@@ -33,6 +33,7 @@ h2{font-size:clamp(30px,4.6vw,56px);font-weight:500;line-height:1.12;letter-spac
 .hero .deco{right:-4%;top:-6%;transform:none;width:min(78vw,900px)}
 .path-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:48px;align-items:start}
 .path-grid img{width:100%;max-width:280px;justify-self:center;height:auto}
+@media(min-width:761px){.inside-grid.flip2{grid-template-columns:.9fr 1.1fr!important}}
 @media(min-width:761px){.inside-grid.flip{grid-template-columns:.8fr 1.2fr!important}}
 .inside-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start;margin-top:40px}.inside-grid .row{grid-template-columns:130px 1fr;gap:12px 24px}.inside-grid img,.sketch img{width:100%;height:auto;display:block;border:1px solid var(--line)}
 .light-grid{display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:48px;align-items:start}
@@ -87,8 +88,9 @@ footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mute);font-si
 <section><svg class="bg" viewBox="0 0 1080 1080" style="right:-8%;top:50%" aria-hidden="true"><use href="#hp"/></svg><div class="wrap">
 <p class="eyebrow">Inside a grotto</p>
 <h2>How to build a quilt-grotto</h2>
-<p class="lead">Two twin quilts are hung in a cylindrical formation, and visitors can poke their head through an opening to see the interior.</p>
-<figure class="sketch" style="max-width:520px;margin-top:40px"><img src="media/grotto-illustration-2.jpg" alt="Illustration of a quilted grotto hanging from wires, with hand stencils and the words WE KNOW THIS PLACE inside, and a dark standing figure at its opening"><figcaption>Sketch: the grotto hangs from above on wires.</figcaption></figure>
+<div class="inside-grid flip2"><figure class="sketch" style="margin:0"><img src="media/grotto-illustration-2.jpg" alt="Illustration of a quilted grotto hanging from wires, with hand stencils and the words WE KNOW THIS PLACE inside, and a dark standing figure at its opening"><figcaption>Sketch: the grotto hangs from above on wires.</figcaption></figure>
+<p class="lead" style="margin:0">Two twin quilts are hung in a cylindrical formation, and visitors can poke their head through an opening to see the interior.</p>
+</div>
 </div>
 </div></section>
 
