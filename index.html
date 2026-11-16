@@ -40,7 +40,7 @@ h2{font-size:clamp(30px,4.6vw,56px);font-weight:500;line-height:1.12;letter-spac
 video{width:100%;height:auto;aspect-ratio:9/16;background:#1c1d1e;display:block;border:1px solid var(--line)}
 a{color:var(--ochre)}
 .stmt-grid{display:grid;grid-template-columns:1fr minmax(220px,300px);gap:56px;align-items:start}.stmt-grid video{width:100%;height:auto;display:block;border:1px solid var(--line)}
-.statement{padding:clamp(72px,12vw,160px) 0}.statement .big{margin-top:-.12em;font-size:clamp(30px,5vw,64px);line-height:1.2;max-width:18em;font-weight:400}
+.stmt-grid .ask{text-align:right;margin-top:32px;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}.stmt-grid .ask::after{content:"  \2192";color:var(--ochre)}.statement{padding:clamp(72px,12vw,160px) 0}.statement .big{margin-top:-.12em;font-size:clamp(30px,5vw,64px);line-height:1.2;max-width:18em;font-weight:400}
 figcaption{color:var(--mute);font-size:14px;margin-top:10px}
 footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mute);font-size:14px;letter-spacing:.18em}
 @media(max-width:760px){
@@ -54,7 +54,7 @@ footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mute);font-si
  .grid div{padding:24px 0}
  .path-grid,.light-grid,.inside-grid{gap:64px}
  .light-grid .rows{margin-top:0}
- .stmt-grid{grid-template-columns:1fr;gap:40px}.stmt-grid figure{max-width:260px}
+ .stmt-grid{grid-template-columns:1fr;gap:40px}.stmt-grid .ask{margin-top:24px}.stmt-grid .ask::after{content:"  \2193"}.stmt-grid figure{max-width:260px}
  .sub{margin-top:56px}
  .by{margin-top:72px}
  .row,.inside-grid .row{grid-template-columns:1fr}.grid{grid-template-columns:1fr}
@@ -74,7 +74,8 @@ footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mute);font-si
 <p class="by">A QUILT INSTALLATION PROPOSAL<br>BY ZAK FOSTER</p></div></section>
 
 <section class="statement"><div class="wrap"><div class="stmt-grid">
-<h2 class="big">Four interactive quilt&#8209;grottos, each made from two twin quilts hung from above</h2>
+<div><h2 class="big">Four interactive quilt&#8209;grottos, each made from two twin quilts hung from above</h2>
+<p class="ask">What is a quilt&#8209;grotto?</p></div>
 <figure><video controls playsinline preload="metadata" poster="media/prototype-poster.jpg"><source src="media/prototype.mp4" type="video/mp4">Your browser can&rsquo;t play this video.</video>
 <figcaption>Prototype: two randomly selected quilts, standing in for the final work.</figcaption></figure>
 </div></div></section>
